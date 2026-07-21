@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+
+# Logs
+*.log
+
+# ==========================
+# DATASETS
+# ==========================
+
+data/raw/*
+data/processed/*
+
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ==========================
+# LARGE MODEL FILES
+# ==========================
+
+models/X_train.pkl
+models/X_test.pkl
+models/y_train.pkl
+models/y_test.pkl
+
+models/random_forest.pkl
+
+# Keep these
+!models/best_model.pkl
+!models/xgboost.pkl
+!models/lightgbm.pkl
+!models/logistic_regression.pkl
+!models/decision_tree.pkl
+!models/feature_names.pkl
+!models/label_encoders.pkl
+!models/model_comparison.csv
+!models/shap_feature_importance.csv
